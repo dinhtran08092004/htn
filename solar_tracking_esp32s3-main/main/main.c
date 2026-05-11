@@ -41,6 +41,16 @@ SemaphoreHandle_t adc_mutex = NULL;
 // Handle quản lý task tracking mặt trời
 TaskHandle_t ldr_task_handle = NULL;
 
+
+
+
+
+
+
+
+
+
+
 /**
  * ============================================================
  * TASK ĐỌC NHIỆT ĐỘ
@@ -66,6 +76,16 @@ void ntc_task(void *pvParameters)
         vTaskDelay(pdMS_TO_TICKS(5000));
     }
 }
+
+
+
+
+
+
+
+
+
+
 
 /**
  * ============================================================
@@ -103,6 +123,15 @@ static void light_check_callback(TimerHandle_t xTimer)
         }
     }
 }
+
+
+
+
+
+
+
+
+
 
 /**
  * ============================================================
@@ -177,6 +206,14 @@ void lcd_task(void *pvParameters)
         vTaskDelay(pdMS_TO_TICKS(1000));
     }
 }
+
+
+
+
+
+
+
+
 
 /**
  * ============================================================
